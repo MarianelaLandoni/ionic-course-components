@@ -15,7 +15,7 @@ export class HomePage {
 
   components: ListComponent[] = [
     { icon: 'american-football-outline', name: 'Action Sheet', redirectTo: '/action-sheet' },
-    { icon: 'logo-apple-appstore', name: 'Alert', redirectTo: '/alert' },
+    { icon: 'alert-circle-outline', name: 'Alert', redirectTo: '/alert' },
   ];
 
   constructor() { }
