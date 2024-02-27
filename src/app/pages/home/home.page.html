@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="none">
+    @for (item of components; track $index) {
+    <ion-item [routerLink]="item?.redirectTo" detail>
+      <ion-icon [name]="item?.icon" slot="start" color="primary"></ion-icon>
+      {{item?.name}}
+    </ion-item>
+    }
+  </ion-list>
+
+</ion-content>
