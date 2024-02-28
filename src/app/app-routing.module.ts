@@ -27,6 +27,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/cards/cards.module').then(m => m.CardsPageModule)
   },
   {
+    path: 'checks',
+    loadChildren: () => import('./pages/checks/checks.module').then(m => m.ChecksPageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
