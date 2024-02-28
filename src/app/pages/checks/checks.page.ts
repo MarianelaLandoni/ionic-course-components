@@ -5,11 +5,30 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './checks.page.html',
   styleUrls: ['./checks.page.scss'],
 })
-export class ChecksPage implements OnInit {
+export class ChecksPage {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  checks = [
+    {
+      name: 'primary',
+      selected: false
+    },
+    {
+      name: 'secondary',
+      selected: true
+    },
+    {
+      name: 'tertiary',
+      selected: false
+    },
+    {
+      name: 'success',
+      selected: true
+    }
+  ];
 
+  onClick(check: any) {
+    console.log(check);
+  }
 }
