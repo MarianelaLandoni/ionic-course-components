@@ -42,3 +42,57 @@ ion-action-sheet.my-custom-class {
 .trash-red .sc-ion-action-sheet-md {
   color: #000000;
 }
+
+//date time customization
+ion-datetime {
+  --background: #f1f4ff;
+  border-radius: 16px;
+}
+
+//date time inside modal customization
+
+ion-datetime.datetime-custom-modal {
+  --title-color: #da5296;
+  --background: #fff1fb;
+}
+
+ion-datetime.datetime-custom-modal::part(calendar-day) {
+  color: #da5296;
+}
+
+ion-datetime.datetime-custom-modal::part(calendar-day today) {
+  color: #8462d1;
+  border: 1px solid #8462d1;
+}
+
+ion-datetime.datetime-custom-modal::part(calendar-day):focus {
+  background-color: rgba(206, 73, 118, 0.2);
+  box-shadow: 0px 0px 0px 4px rgba(228, 159, 196, 0.2);
+}
+
+ion-datetime.datetime-custom-modal::part(calendar-day active) {
+  background-color: rgba(206, 73, 118, 0.2);
+  box-shadow: 0px 0px 0px 4px rgba(228, 159, 196, 0.2);
+  border: none;
+}
+
+
+
+//modal with date time customization
+
+ion-modal#example-modal,
+ion-modal#wheelpicker-modal {
+  --width: fit-content;
+  --min-width: 250px;
+  --height: fit-content;
+  --border-radius: 16px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+}
+
+ion-modal#example-modal ion-icon {
+  margin-right: 6px;
+  width: 48px;
+  height: 48px;
+  padding: 4px 0;
+  color: #8d8d8d;
+}

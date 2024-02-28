@@ -1,13 +1,65 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>dateTime</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="Date time"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">dateTime</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+
+  <div class="container">
+    <h5>Calendario sin timer</h5>
+    <ion-datetime locale="es-ES" presentation="date"></ion-datetime>
+  </div>
+
+
+  <div class="container">
+    <h5>Calendario en modal con ion-datetime-button</h5>
+    <ion-datetime-button color="secondary" datetime="datetime"></ion-datetime-button>
+
+    <ion-modal class="datetime-modal" [keepContentsMounted]="true">
+      <ng-template>
+        <ion-datetime id="datetime"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+  </div>
+
+  <div class="container">
+    <h5>Calendario en modal con botón propio</h5>
+
+    <ion-button fill="clear" (click)="openCalendar()">
+      <ion-label>Seleccionar fecha</ion-label>
+      <ion-icon slot="end" name="calendar-outline"></ion-icon>
+    </ion-button>
+
+    <ion-datetime-button class="calendar-in-modal" color="secondary" datetime="datetime"></ion-datetime-button>
+
+    <ion-modal id="example-modal" [keepContentsMounted]="true" [isOpen]="showCalendar" (didDismiss)="closeCalendar()"
+      trigger="open-custom-dialog">
+      <ng-template>
+        <ion-datetime class="datetime-custom-modal" presentation="date"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+
+  </div>
+
+  <div class="container">
+    <h5>Calendario en wheelpicker</h5>
+
+    <ion-datetime presentation="date" [preferWheel]="true"></ion-datetime>
+  </div>
+
+
+  <div class="container">
+    <h5>Calendario en modal con wheelpicker</h5>
+
+    <ion-button fill="clear" (click)="openWheelpicker()" color="tertiary">
+      <ion-label>Seleccionar fecha</ion-label>
+      <ion-icon slot="end" name="calendar-outline"></ion-icon>
+    </ion-button>
+
+    <ion-modal id="wheelpicker-modal" [isOpen]="showWheelpicker" (didDismiss)="closeWheelpicker()"
+      trigger="open-custom-dialog">
+      <ng-template>
+        <ion-datetime presentation="date" [preferWheel]="true"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+  </div>
+
+
 </ion-content>

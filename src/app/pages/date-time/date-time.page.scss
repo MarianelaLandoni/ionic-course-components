@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.datetime-modal {
+  --border-radius: 16px;
+}
+
+.calendar-in-modal {
+  display: none;
+}
