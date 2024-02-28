@@ -1,7 +1,23 @@
 <app-header title="alert"></app-header>
 
 <ion-content class="ion-padding">
-  <ion-button (click)="presentAlert()" expand="block">
-    <ion-label>Mostrar alerta</ion-label>
+  <ion-button class="ion-margin" (click)="presentAlert()" expand="block">
+    <ion-label>Alerta</ion-label>
+  </ion-button>
+
+  <ion-button class="ion-margin" (click)="presentAlertMultipleButtons()" expand="block">
+    <ion-label>Alerta varios botones</ion-label>
+  </ion-button>
+
+  <ion-button class="ion-margin" (click)="presentAlertInput()" expand="block">
+    <ion-label>Alerta con inputs</ion-label>
+  </ion-button>
+
+  <ion-button class="ion-margin" (click)="presentAlertRadio()" expand="block">
+    <ion-label>Alerta con radios</ion-label>
+  </ion-button>
+
+  <ion-button class="ion-margin" (click)="presentAlertCheckbox()" expand="block">
+    <ion-label>Alerta con checkbox</ion-label>
   </ion-button>
 </ion-content>
