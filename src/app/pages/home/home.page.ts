@@ -20,7 +20,8 @@ export class HomePage {
     { icon: 'radio-button-off-outline', name: 'Buttons', redirectTo: '/buttons' },
     { icon: 'card-outline', name: 'Cards', redirectTo: '/cards' },
     { icon: 'checkmark-circle-outline', name: 'Checks', redirectTo: '/checks' },
-    { icon: 'calendar-outline', name: 'Date time', redirectTo: '/date-time' }
+    { icon: 'calendar-outline', name: 'Date time', redirectTo: '/date-time' },
+    { icon: 'car-outline', name: 'Fabs', redirectTo: '/fabs' },
   ];
 
   constructor() { }

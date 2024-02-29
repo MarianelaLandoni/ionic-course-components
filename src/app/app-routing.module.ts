@@ -35,6 +35,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/date-time/date-time.module').then(m => m.DateTimePageModule)
   },
   {
+    path: 'fabs',
+    loadChildren: () => import('./pages/fabs/fabs.module').then(m => m.FabsPageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -44,6 +48,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+
 
 
 
