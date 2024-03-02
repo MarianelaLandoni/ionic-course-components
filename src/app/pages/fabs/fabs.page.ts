@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-fabs',
   templateUrl: './fabs.page.html',
   styleUrls: ['./fabs.page.scss'],
 })
-export class FabsPage implements OnInit {
+export class FabsPage {
 
-  constructor() { }
+  data = Array(100);
 
-  ngOnInit() {
+  pressDocument() {
+    console.log('Press Document');
+  }
+
+  goToPage() {
+    console.log('Go to page');
   }
 
 }
