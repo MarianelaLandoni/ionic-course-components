@@ -1,0 +1,159 @@
+<app-header title="inputs"></app-header>
+
+<ion-content class="ion-padding">
+  <h3>Inputs básicos</h3>
+  <ion-list class="mb-16">
+    <ion-item>
+      <ion-input label="Default"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="With placeholder" placeholder="Enter company name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="With value" value="121 S Pinckney St #300"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Readonly" value="Madison" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Disabled" value="53703" [disabled]="true"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <h3>Tipos de inputs</h3>
+  <ion-list class="mb-16">
+    <ion-list>
+      <ion-item>
+        <ion-input label="Text" placeholder="Enter text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Number" type="number" placeholder="000"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Password" type="password" value="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Email" type="email" placeholder="email@domain.com"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Telephone" type="tel" placeholder="888-888-8888"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+
+  <h3>Posición del label</h3>
+  <ion-list class="mb-16">
+    <ion-item>
+      <ion-input label="Default" placeholder="Enter text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="No label" labelPlacement="floating" placeholder="Enter text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Fixed" labelPlacement="fixed" placeholder="Enter text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Stacked" labelPlacement="stacked" placeholder="Enter text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Floating" labelPlacement="floating" placeholder="Enter text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <h3>Opciones para borrar</h3>
+  <ion-list class="mb-16">
+    <ion-item>
+      <ion-input label="Input with clear button" labelPlacement="stacked" [clearInput]="true"
+        placeholder="Enter text to see clear button" value="Default value">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Input with clear on edit" labelPlacement="stacked" [clearOnEdit]="true"
+        placeholder="Enter text,leave input,come back,type to clear">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Password input" labelPlacement="stacked" type="password"
+        placeholder="Enter text,leave input,come back,type to clear">
+      </ion-input>
+    </ion-item>
+  </ion-list>
+
+  <h3>Estilo de relleno (solo md)</h3>
+  <ion-list class="mb-16">
+    <ion-input class="mb-16" label="Solid input" label-placement="floating" fill="solid"
+      placeholder="Enter text"></ion-input>
+
+    <ion-input class="mb-16" label="Outline input" label-placement="floating" fill="outline"
+      placeholder="Enter text"></ion-input>
+  </ion-list>
+
+
+
+  <h3>Helper y texto de error</h3>
+  <ion-list class="mb-16">
+    <ion-input type="email" fill="solid" label="Email" labelPlacement="floating" helperText="Introduce un correo válido"
+      errorText="Correo no válido" ngModel email></ion-input>
+  </ion-list>
+
+
+  <h3>Inputs con contador</h3>
+  <ion-list class="mb-16">
+    <ion-input label="Default counter" labelPlacement="floating" [counter]="true" maxlength="20"></ion-input>
+
+    <ion-input id="custom-input" label="Custom Counter Format" labelPlacement="floating" [counter]="true" maxlength="20"
+      [counterFormatter]="customCounterFormatter"></ion-input>
+  </ion-list>
+
+  <h3>Input con filtro alfanumérico</h3>
+  <ion-list class="mb-16">
+    <ion-item>
+      <ion-input label="Alphanumeric Characters" [value]="inputModel" (ionInput)="onInput($event)"
+        #ionInputEl></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <h3>Cambiar color subrayado (solo md) y cursor</h3>
+  <ion-list class="mb-16">
+    <ion-input color="primary" placeholder="Primary input"></ion-input>
+    <ion-input color="secondary" placeholder="Secondary input"></ion-input>
+    <ion-input color="tertiary" placeholder="Tertiary input"></ion-input>
+    <ion-input color="success" placeholder="Success input"></ion-input>
+    <ion-input color="warning" placeholder="Warning input"></ion-input>
+    <ion-input color="danger" placeholder="Danger input"></ion-input>
+    <ion-input color="light" placeholder="Light input"></ion-input>
+    <ion-input color="medium" placeholder="Medium input"></ion-input>
+    <ion-input color="dark" placeholder="Dark input"></ion-input>
+  </ion-list>
+
+  <h3>Inputs customizados</h3>
+  <ion-list class="mb-16">
+    <ion-input class="custom" label="With placeholder" placeholder="Enter company name"
+      labelPlacement="floating"></ion-input>
+
+    <ion-input class="custom-two mb-16" label="With placeholder" placeholder="Enter company name"
+      labelPlacement="floating"></ion-input>
+
+  </ion-list>
+
+
+
+  <!-- <ion-button (click)="goToInputForm()" expand="block" shape="round">
+    Ir a input form
+  </ion-button> -->
+
+</ion-content>

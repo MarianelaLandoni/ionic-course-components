@@ -24,6 +24,7 @@ export class HomePage {
     { icon: 'car-outline', name: 'Fabs', redirectTo: '/fabs' },
     { icon: 'grid-outline', name: 'Grid', redirectTo: '/grid' },
     { icon: 'infinite-outline', name: 'Infinite Scroll', redirectTo: '/infinite-scroll' },
+    { icon: 'hammer-outline', name: 'Input', redirectTo: '/input' }
   ];
 
   constructor() { }
