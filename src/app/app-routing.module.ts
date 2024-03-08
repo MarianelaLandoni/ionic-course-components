@@ -39,6 +39,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/fabs/fabs.module').then(m => m.FabsPageModule)
   },
   {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then(m => m.GridPageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'

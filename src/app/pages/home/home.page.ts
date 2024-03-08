@@ -22,6 +22,7 @@ export class HomePage {
     { icon: 'checkmark-circle-outline', name: 'Checks', redirectTo: '/checks' },
     { icon: 'calendar-outline', name: 'Date time', redirectTo: '/date-time' },
     { icon: 'car-outline', name: 'Fabs', redirectTo: '/fabs' },
+    { icon: 'grid-outline', name: 'Grid', redirectTo: '/grid' },
   ];
 
   constructor() { }

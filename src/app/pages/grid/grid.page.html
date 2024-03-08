@@ -1,0 +1,28 @@
+<app-header title="grid"></app-header>
+
+<ion-content>
+
+  <ion-grid fixed>
+    <ion-row>
+      @for (item of [0,1,2,3,4,5,6,7,8,9,10,11]; track $index) {
+      <ion-col size="12" size-sm="6" size-md="4" size-xl="3">
+
+        <ion-card>
+          <ion-img src="/assets/images/cat-front-view.jpeg"></ion-img>
+        </ion-card>
+
+        <ion-card-header>
+          <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+          <ion-card-title>Awesome Title</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa deserunt enim numquam, quibusdam cum
+          veniam ab voluptates reiciendis nisi, in, earum libero! Adipisci dicta ut aliquid dolorem praesentium vel!
+        </ion-card-content>
+
+      </ion-col>
+      }
+    </ion-row>
+  </ion-grid>
+</ion-content>
