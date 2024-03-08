@@ -23,6 +23,7 @@ export class HomePage {
     { icon: 'calendar-outline', name: 'Date time', redirectTo: '/date-time' },
     { icon: 'car-outline', name: 'Fabs', redirectTo: '/fabs' },
     { icon: 'grid-outline', name: 'Grid', redirectTo: '/grid' },
+    { icon: 'infinite-outline', name: 'Infinite Scroll', redirectTo: '/infinite-scroll' },
   ];
 
   constructor() { }

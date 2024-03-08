@@ -43,6 +43,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/grid/grid.module').then(m => m.GridPageModule)
   },
   {
+    path: 'infinite-scroll',
+    loadChildren: () => import('./pages/infinite/infinite.module').then(m => m.InfinitePageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -52,6 +56,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+
 
 
 
