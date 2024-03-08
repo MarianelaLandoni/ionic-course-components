@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fabs',
@@ -9,8 +10,10 @@ export class FabsPage {
 
   data = Array(100);
 
-  pressDocument() {
-    console.log('Press Document');
+  constructor(private router: Router) { }
+
+  goToCardsPage() {
+    this.router.navigate(['/cards']);
   }
 
   goToPage() {
